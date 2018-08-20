@@ -1,0 +1,91 @@
+body{
+    background-color:  rgb(225, 200, 231);
+}
+
+.jumbotron-image {
+    background-image: url("../images/gemheader.JPG");
+    height: 100px;
+}
+
+.jumbotron {
+    background-color:  rgb(225, 200, 231);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.display-4 {
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    
+}
+.instructions {
+    padding-bottom: 5px;
+}
+
+.blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.card-header {
+    font-family: 'Rammetto One', cursive;
+    font-size: 20px;
+    background-color: #97FEFF;
+}
+
+.second {
+    margin-top: 15px;
+}
+.score {
+    font-family: 'Rammetto One', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+.number {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.boxscore {
+    background-color: #FCE875;
+}
+
+.win {
+    background-color: #65B669;
+}
+
+.loss {
+    background-color: #DC6092;
+}
+
+.third{
+    margin-top: 15px;
+}
+.firstbutton {
+    background-image: url("../images/gem1.JPG");
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+.secondbutton {
+    background-image: url("../images/gem7.JPG");
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+.thirdbutton {
+    background-image: url("../images/gem8.JPG");
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+.fourthbutton {
+    background-image: url("../images/gem9.JPG");
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
