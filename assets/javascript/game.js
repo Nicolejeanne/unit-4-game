@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // Create variables
 let wins = 0;
 let losses = 0;
@@ -8,9 +10,6 @@ let crymax = 12;
 let randomCrystalOne = 0;
 let randomCrystalTwo = 0;
 let yourScoreTotal = 0;
-
-
-
 
 
 // Initializing the game
@@ -26,25 +25,25 @@ let randomCrystalOne = Math.floor(Math.random() * (crymax - crymin + 1)) + crymi
 let randomCrystalTwo = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
     $(".secondbutton").val(randomCrystalTwo);
 let randomCrystalThree = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
-    $(".secondbutton").val(randomCrystalThree);
+    $(".thirdbutton").val(randomCrystalThree);
 let randomCrystalFour = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
-    $(".secondbutton").val(randomCrystalFour);
+    $(".fourthbutton").val(randomCrystalFour);
 
 // Add event handler to click event on each crystal
 $(".firstbutton").on("click", function() {
-    console.log(randomCrystalOne);
+    $(".yourScore").html(yourScoreTotal += randomCrystalOne);
     });
    
 $(".secondbutton").on("click", function() {
-    console.log(randomCrystalTwo);
+    $(".yourScore").html(yourScoreTotal += randomCrystalTwo);
    });
 
 $(".thirdbutton").on("click", function() {
-    console.log(randomCrystalThree);
+    $(".yourScore").html(yourScoreTotal += randomCrystalThree);
    });
 
 $(".fourthbutton").on("click", function() {
-    return (randomCrystalFour);
+    $(".yourScore").html(yourScoreTotal += randomCrystalFour);
    });  
 
 // Function for if/else statement to generate score
@@ -54,10 +53,9 @@ if (yourScoreTotal === randomNumber){
     wins++;
 } else if (yourScoreTotal > randomNumber){
     losses++;
+} 
 }
 
-} 
 
 initializeGame();
-
- 
+});
