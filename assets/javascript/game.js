@@ -13,6 +13,7 @@ let randomNumber;
 
 // Initializing the game
 function initializeGame(){
+    
 
 // Generates random number between 19-120
 let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -56,10 +57,21 @@ function checkScore() {
     if (yourScoreTotal === randomNumber){
         wins++;
         $(".winTotal").html(wins);
+        $(".firstbutton").val('');
+        $(".secondbutton").val('');
+        $(".thirdbutton").val('');
+        $(".fourthbutton").val('');
+        $(".random").val('');
+        
     }
     if (yourScoreTotal > randomNumber){
         losses++;
         $(".lossTotal").html(losses);
+        $(".firstbutton").val('');
+        $(".secondbutton").val('');
+        $(".thirdbutton").val('');
+        $(".fourthbutton").val('');
+        $(".random").val('');
     }
 }
    
@@ -70,3 +82,16 @@ initializeGame();
 
 // End of document.ready 
 });
+
+/*function resetGame(){ // function that resets the game
+    06
+       ..code to reset
+    07
+    }
+    08
+    // code to attach the click event to the button
+    09
+    // place this code at the bottom of the script.
+    10
+    resetID.onclick = resetGame; // name of the function to call
+    // */

@@ -97,3 +97,11 @@ body{
     margin-left: 1.25%;
     margin-top: 15px;
 }
+.btn-primary {
+    background-color: #E91F20;
+    font-family: 'Rammetto One', cursive;
+    margin-left: 425px;
+}
+.btn-primary:hover {
+    background-color: #39A83F;
+}
