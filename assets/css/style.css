@@ -3,7 +3,7 @@ body{
 }
 
 .jumbotron-image {
-    background-image: url("../images/gemheader.JPG");
+    background-image: url("../images/gemheader.jpg");
     height: 100px;
 }
 
@@ -69,26 +69,26 @@ body{
     margin-top: 15px;
 }
 .firstbutton {
-    background-image: url("../images/gem1.JPG");
+    background-image: url("../images/gem1.jpg");
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin: 0 10px;
 }
 .secondbutton {
-    background-image: url("../images/gem7.JPG");
+    background-image: url("../images/gem7.jpg");
     width: 150px;
     height: 150px;
     margin: 0 10px;
 }
 .thirdbutton {
-    background-image: url("../images/gem8.JPG");
+    background-image: url("../images/gem8.jpg");
     width: 150px;
     height: 150px;
     margin: 0 10px;
 }
 .fourthbutton {
-    background-image: url("../images/gem9.JPG");
+    background-image: url("../images/gem9.jpg");
     width: 150px;
     height: 150px;
     margin: 0 10px;
