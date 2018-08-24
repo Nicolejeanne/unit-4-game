@@ -93,16 +93,3 @@ initializeGame();
 
 // End of document.ready 
 });
-
-/*function resetGame(){ // function that resets the game
-    06
-       ..code to reset
-    07
-    }
-    08
-    // code to attach the click event to the button
-    09
-    // place this code at the bottom of the script.
-    10
-    resetID.onclick = resetGame; // name of the function to call
-    // */
