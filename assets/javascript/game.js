@@ -7,28 +7,37 @@ let min = 19;
 let max = 121;
 let crymin = 1;
 let crymax = 12;
-let yourScoreTotal = 0;
+let yourScoreTotal;
 let randomNumber;
+let randomCrystalOne;
+let randomCrystalTwo;
+let randomCrystalThree;
+let randomCrystalFour;
 
 
 // Initializing the game
 function initializeGame(){
-    
+   
+// Reset yourTotalScore to zero
+yourScoreTotal = 0;
+$(".yourScore").html(yourScoreTotal);
 
 // Generates random number between 19-120
-let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 $(".random").html(randomNumber);
 
 // Generates random number for crystals between 1-12
-let randomCrystalOne = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;
+randomCrystalOne = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;
     $(".firstbutton").val(randomCrystalOne);
-let randomCrystalTwo = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
+randomCrystalTwo = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
     $(".secondbutton").val(randomCrystalTwo);
-let randomCrystalThree = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
+randomCrystalThree = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
     $(".thirdbutton").val(randomCrystalThree);
-let randomCrystalFour = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
+randomCrystalFour = Math.floor(Math.random() * (crymax - crymin + 1)) + crymin;    
     $(".fourthbutton").val(randomCrystalFour);
 
+// End of initialize game function
+}
 
 // Add event handler to click event on each crystal
 $(".firstbutton").on("click", function() {
@@ -51,7 +60,7 @@ $(".fourthbutton").on("click", function() {
     checkScore();
    });  
 
-// If/else statement to increment wins and losses
+// If/else statement to increment wins and losses then re-initialize game
 function checkScore() {
 
     if (yourScoreTotal === randomNumber){
@@ -62,6 +71,7 @@ function checkScore() {
         $(".thirdbutton").val('');
         $(".fourthbutton").val('');
         $(".random").val('');
+        initializeGame();
         
     }
     if (yourScoreTotal > randomNumber){
@@ -72,13 +82,14 @@ function checkScore() {
         $(".thirdbutton").val('');
         $(".fourthbutton").val('');
         $(".random").val('');
+        initializeGame();
     }
 }
    
-// End of initialize game function
-}
-
 initializeGame();
+
+
+
 
 // End of document.ready 
 });
