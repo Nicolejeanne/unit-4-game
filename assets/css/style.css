@@ -36,6 +36,10 @@ body{
     background-color: #97FEFF;
 }
 
+.two {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
 .second {
     margin-top: 15px;
 }
@@ -88,4 +92,16 @@ body{
     width: 150px;
     height: 150px;
     margin: 0 10px;
+}
+.thrButt {
+    margin-left: 1.25%;
+    margin-top: 15px;
+}
+.btn-primary {
+    background-color: #E91F20;
+    font-family: 'Rammetto One', cursive;
+    margin-left: 425px;
+}
+.btn-primary:hover {
+    background-color: #39A83F;
 }
